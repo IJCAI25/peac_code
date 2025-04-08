@@ -11,14 +11,17 @@ described in:
 - Minimum of 40GB VRAM for training (We use Tesla A100)
 
 ### ⚙ Setup
-
 1. **Install required dependencies**  
+Download the dataset and required weight files from [This temporary repository](https://new.space/s/QcbwEh2fGqzt42CY_hx9NQ#HGxKh1cQ94PkY4FeqntAlSy7TVKcjwogTMjoyu4MvDs).
+Place the `train_data.pkl` file into the `data` folder, and place the `adapter_model.bin` and `optimizer.pt` files into the `models\weights\lora-alpha_1\checkpoint-11800` folder.
+
+2. **Install required dependencies**  
 
     ```sh
     pip install -r requirements.txt
     ```
 
-2. **Set up WandB API key**  
+3. **Set up WandB API key**  
 
     Set up your [WandB](https://wandb.ai/) API key for training and evaluation logging.
 
